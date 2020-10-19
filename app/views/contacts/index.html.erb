@@ -1,0 +1,194 @@
+<section id="main">
+
+    <nav>
+        <a href="#" class="logo">LOGO</a>
+        <div class="toggle"></div>
+        <ul class="menu">
+            <li><a href="#main" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+        <a href="#" class="lang">En</a>
+    </nav>
+
+    <div class="name">
+        <p>Hello</p>
+        <h1>I'm <font color="#17d1ac">Morah Paul</font></h1>
+        <p class="details">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit. Dolorem veniam dolore sed molestiae est
+              delectus magni nihil odit omnis aliquid, nostrum 
+              rerum distinctio, tempora eveniet suscipit 
+              molestias ipsam exercitationem architecto.
+        </p>
+        <a href="#" class="cv-btn">Download CV</a>
+    </div>
+
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github-square"></i></a>
+    </div>
+
+    <div class="arrow"></div>
+</section>
+
+<section id="about">
+    <div class="about-text">
+        <h1>About Us</h1>
+        <h2>Freelancing FrontEnd Developer</h2>
+        <p>Lorem ipsum dolor sit amet 
+            consectetur adipisicing elit. Obcaecati inci
+            dunt unde impedit, provident distinctio, vero 
+            quia iure quae corporis debitis voluptatem 
+            ipsa et aliquid nisi dolor, molestias reiciendis optio! Eveniet!
+        </p>
+    </div>
+
+    <div classs="about-model">
+        <img src="">
+    </div>
+</section>
+
+<section id="services">
+    <div class="s-heading">
+        <h1>Services</h1>
+        <p>Here is some services We provide You</p>
+    </div>
+
+    <div class="s-b-container">
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Front-End</div>
+                <img src="">
+            </div>
+            <div class="s-b-text">
+                <a href="#">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Omnis voluptas commodi, quia 
+                    incidunt delectus modi sapiente. Blanditiis illum 
+                    possimus nobis architecto, debitis odio molestias soluta 
+                    deserunt culpa cumque praesentium ipsum?</a>
+            </div>
+        </div>
+
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Back-End</div>
+                <img src="">
+            </div>
+            <div class="s-b-text">
+                <a href="#">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Omnis voluptas commodi, quia 
+                    incidunt delectus modi sapiente. Blanditiis illum 
+                    possimus nobis architecto, debitis odio molestias soluta 
+                    deserunt culpa cumque praesentium ipsum?</a>
+            </div>
+        </div>
+
+
+        <div class="s-box">
+            <div class="s-b-img">
+                <div class="s-type">Full stack Development</div>
+                <img src="">
+            </div>
+            <div class="s-b-text">
+                <a href="#">Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Omnis voluptas commodi, quia 
+                    incidunt delectus modi sapiente. Blanditiis illum 
+                    possimus nobis architecto, debitis odio molestias soluta 
+                    deserunt culpa cumque praesentium ipsum?</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h1 class="p-heading">Project</h1>
+
+    <div class="p-b-container">
+        <div class="p-box">
+            <div class="text-overlay">
+                <h1>Writting</h1>
+                <p>Client Project</p>
+            </div>
+            <img src="" alt="">
+        </div>
+
+        <div class="p-box">
+            <div class="text-overlay">
+                <h1>Writting</h1>
+                <p>Client Project</p>
+            </div>
+            <img src="" alt="">
+        </div>
+
+        <div class="p-box">
+            <div class="text-overlay">
+                <h1>Writting</h1>
+                <p>Client Project</p>
+            </div>
+            <img src="" alt="">
+        </div>
+
+        <div class="p-box">
+            <div class="text-overlay">
+                <h1>Writting</h1>
+                <p>Client Project</p>
+            </div>
+            <img src="" alt="">
+        </div>
+
+        <div class="p-box">
+            <div class="text-overlay">
+                <h1>Writting</h1>
+                <p>Client Project</p>
+            </div>
+            <img src="" alt="">
+        </div>
+
+        <div class="p-box">
+            <div class="text-overlay">
+                <h1>Writting</h1>
+                <p>Client Project</p>
+            </div>
+            <img src="" alt="">
+        </div>
+</section>
+
+<section id="contact-btn">
+    <h1>If You Have Any Project In Your Mind</h1>
+    <a href="#contact-form">Contact Me</a>
+</section>
+
+
+<section id="contact-form">
+    <%= form_for @contact do |f| %>
+    <div class="contact-left">
+        <h1 class="c-l-heading">Write Us</h1>
+        <div class="f-name">
+            <%= f.label :name, class:"font" %><br>
+            <%= f.text_field :name, required: true, class:"cinput", placeholder: "Full Name" %>
+        </div>
+        <div class= "f-email">
+            <%= f.label :email, class:"font" %><br>
+            <%= f.email_field :email, required: true, class:"cinput", placeholder: "Example@gmail.com" %>
+        </div>
+    </div>
+
+    <div class="contact-right">
+        <div class="message">
+        <%= f.label :message, class:"mfont" %><br>
+        <%= f.text_area :message, required: true, class:"area", placeholder:"write to us ....."%>
+        </div>
+        <%= f.submit 'Send Message', class: "button" %>
+    </div>
+
+        <div class="hidden">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, required: true %>
+        </div>
+    <% end %>
+</section>
