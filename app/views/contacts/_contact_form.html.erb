@@ -1,0 +1,33 @@
+<section id="contact-btn">
+    <h1>If You Have Any Project In Your Mind</h1>
+    <a href="#contact-form">Contact Me</a>
+</section>
+
+<section id="contact-form">
+    <%= form_for @contact do |f| %>
+    <div class="contact-left">
+        <h1 class="c-l-heading">Write Us</h1>
+        <div class="f-name">
+            <%= f.label :name, class:"font" %><br>
+            <%= f.text_field :name, required: true, class:"cinput", placeholder: "Full Name" %>
+        </div>
+        <div class= "f-email">
+            <%= f.label :email, class:"font" %><br>
+            <%= f.email_field :email, required: true, class:"cinput", placeholder: "Example@gmail.com" %>
+        </div>
+    </div>
+
+    <div class="contact-right">
+        <div class="message">
+        <%= f.label :message, class:"mfont" %><br>
+        <%= f.text_area :message, required: true, class:"area", placeholder:"write to us ....."%>
+        </div>
+        <%= f.submit 'Send Message', class: "button" %>
+    </div>
+
+        <div class="hidden">
+        <%= f.label :name %><br>
+        <%= f.text_field :name, required: true %>
+        </div>
+    <% end %>
+</section>
